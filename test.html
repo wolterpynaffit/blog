@@ -1,0 +1,107 @@
+---
+layout: default
+title: time
+author: gina
+category: places
+date: 2020-3-2
+img: >-
+ https://picsum.photos/200/300
+text_html: >-
+    <h2>bob was here</h2> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus soluta ea dolore, nulla, quis perspiciatis praesentium nam reiciendis odit veniam, earum ut? Eligendi aperiam nulla ipsum, alias nesciunt quod perferendis.</p>
+banner-text: heading text
+
+bg-img: >-
+ https://picsum.photos/200
+video:
+  video-type: vimeo
+  youtube-id: R10vLWGceGM
+  vimeo-id: 762501385
+
+gallery-column-count: 4
+gallery:
+  - image: https://picsum.photos/100/300
+    column-width: 1
+    aspect-ratio: landscape
+  - image: https://picsum.photos/300/700
+    column-width: 1
+    aspect-ratio: landscape
+  - image: https://picsum.photos/400/800
+    column-width: 1
+    aspect-ratio: landscape
+  - image: https://picsum.photos/600/500
+    column-width: 1
+    aspect-ratio: landscape
+
+cta_html: >-
+  <h2>This is the call to action</h2> <p>Lorem ipsum dolor, sit amet s illo, ver </p>
+
+
+
+
+
+
+---
+
+<!-- banner -->
+ <section class="min-h-screen bg-cover bg-center text-zinc-100 flex justify-center  items-center" style="background-image:url('{{page.bg-img}}')"> 
+     <h3> {{page.banner-text}} </h3>
+     <img src="{{bg-img}}">
+
+ </section>
+<!-- text content --> 
+<section>
+  {{ page.text_html}}
+</section>
+<!-- video -->
+
+<section class="p-10">
+
+  {% if page.video.video-type == "youtube" %}
+
+  <div class="plyr__video-embed relative" id="player">
+    <iframe
+      src="https://www.youtube.com/embed/{{ page.video.youtube-id }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+      allowfullscreen
+      allowtransparency
+      allow="autoplay"
+    ></iframe>
+
+    {% elsif page.video.video-type == "vimeo" %}
+
+    <div class="plyr__video-embed relative" id="player">
+      <iframe
+        src="https://player.vimeo.com/video/{{ page.video.vimeo-id }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+        allowfullscreen
+        allowtransparency
+        allow="autoplay"
+      ></iframe>
+    </div>
+
+    {% endif %}
+    
+  </div>
+</section>
+<!-- gallery -->
+<section>
+  <div class="gallery grid grid-cols-{{page.gallery-column-count}} gap-5 ">
+    {% for item in page.gallery %}
+      <div class="col-span-{{item.column-width}}">
+        <div class="aspect-{{item.aspect-ratio}} bg-cover bg-center" style="background-image:url('{{item.image}}')" ></div>
+      </div>
+
+  {% endfor %}
+  </div>
+</section>
+<!-- CTA -->
+<section class="flex place-content-center text-center" >
+  <div>
+    <h2 class="editable"> win a prize</h2>
+    <p class="editable"> click and subscribe </p>
+    <a href="#" class = "editable"> this is a button</a>
+  </div>
+ 
+</section>
+<!-- slider -->
+
+<!-- newsletter signup -->
+
