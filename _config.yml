@@ -1,0 +1,11 @@
+page_block: []
+
+_array_structures:
+  page_blocks:
+    -label: Banner
+     icon: article
+     value: 
+      _id: cta
+      title: Banner
+      heading: This is a heading
+      subtitle: This is a subtitle

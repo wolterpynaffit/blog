@@ -8,7 +8,8 @@ img: >-
  https://picsum.photos/200/300
 text_html: >-
     <h2>bob was here</h2> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus soluta ea dolore, nulla, quis perspiciatis praesentium nam reiciendis odit veniam, earum ut? Eligendi aperiam nulla ipsum, alias nesciunt quod perferendis.</p>
-banner-text: heading text
+banner-text: >-
+  <img url= "https://www.vogue.com/verso/static/vogue/assets/logo-header.02dcb2fef16d86c695ce8d290a3fd13c7f6c3182.svg">
 
 bg-img: >-
  https://picsum.photos/200
@@ -31,6 +32,12 @@ gallery:
   - image: https://picsum.photos/600/500
     column-width: 1
     aspect-ratio: landscape
+  - image: https://picsum.photos/900/800
+    column-width: 2
+    aspect-ratio: landscape
+  - image: https://picsum.photos/700/500
+    column-width: 2
+    aspect-ratio: landscape
 
 cta_html: >-
   <h2>This is the call to action</h2> <p>Lorem ipsum dolor, sit amet s illo, ver </p>
@@ -43,18 +50,25 @@ cta_html: >-
 ---
 
 <!-- banner -->
- <section class="min-h-screen bg-cover bg-center text-zinc-100 flex justify-center  items-center" style="background-image:url('{{page.bg-img}}')"> 
-     <h3> {{page.banner-text}} </h3>
-     <img src="{{bg-img}}">
+ <section class="p-20 h-72"> 
+   <div bg-cover bg-center text-zinc-100 flex justify-center  items-center style="background-image:url('{{page.bg-img}}')">
+    <h3 class="p-20"> {{page.banner-text}} </h3>
+   </div>
+     
+     <!-- <img src="{{bg-img}}"> -->
 
  </section>
 <!-- text content --> 
+
 <section>
   {{ page.text_html}}
 </section>
+
+
+
 <!-- video -->
 
-<section class="p-10">
+<section class="p-20">
 
   {% if page.video.video-type == "youtube" %}
 
@@ -82,7 +96,7 @@ cta_html: >-
   </div>
 </section>
 <!-- gallery -->
-<section>
+<section class="p-2">
   <div class="gallery grid grid-cols-{{page.gallery-column-count}} gap-5 ">
     {% for item in page.gallery %}
       <div class="col-span-{{item.column-width}}">
@@ -93,11 +107,11 @@ cta_html: >-
   </div>
 </section>
 <!-- CTA -->
-<section class="flex place-content-center text-center" >
-  <div>
+<section class="flex place-content-center text-center p-48" >
+  <div class="pt ">
     <h2 class="editable"> win a prize</h2>
     <p class="editable"> click and subscribe </p>
-    <a href="#" class = "editable"> this is a button</a>
+    <a href="#" class = " editable"> this is a button</a>
   </div>
  
 </section>
