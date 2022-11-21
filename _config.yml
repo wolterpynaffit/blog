@@ -37,3 +37,6 @@ _select_data:
     - landscape
     - square
     - portrait
+  section-styles:
+    - p-5: Padded Sm
+  inner-styles: Padded Md
