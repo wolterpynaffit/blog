@@ -1,3 +1,6 @@
-{ % for block in page.page_blocks % }
-    { % include /blocks/{{block._id}} %}
-{ % endfor % }
+---
+layout: default
+---
+{% for block in page.page_blocks %}
+    {% include /blocks/{{block._id}}.html %}
+{% endfor %}

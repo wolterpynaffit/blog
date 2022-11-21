@@ -1,11 +1,20 @@
-page_block: []
-
+page_block:
 _array_structures:
   page_blocks:
     - label: Banner
       icon: article
       value: 
-        _id: cta
+        _id: banner
         title: Banner
-        heading: This is a heading
-        subtitle: This is a subtitle
+        bg-img: 
+        banner-text: This is a subtitle
+    - label: gallery
+      icon: article
+      value: 
+        _id: gallery
+        gallery-column-count: 4
+        gallery:
+          - image: https://picsum.photos/100/300
+            column-width: 1
+            aspect-ratio: landscape
+
