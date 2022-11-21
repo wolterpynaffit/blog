@@ -12,3 +12,12 @@
 
 /* Custom CSS */
 
+/* TEMPORARY WHILE USING SIMPLE TAILWIND */
+
+.aspect-portrait {
+    padding-bottom: 110%;
+}
+
+.aspect-landscape {
+    padding-bottom: 60%;
+}

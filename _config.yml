@@ -32,3 +32,8 @@ _array_structures:
             
 
 
+_select_data:
+  aspect-ratios:
+    - landscape
+    - square
+    - portrait
