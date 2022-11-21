@@ -1,20 +1,20 @@
 <section class="p-20">
 
-    {% if block.video.video-type == "youtube" %}
+    {% if block.video-type == "youtube" %}
   
     <div class="plyr__video-embed relative" id="player">
       <iframe
-        src="https://www.youtube.com/embed/{{ page.video.youtube-id }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+        src="https://www.youtube.com/embed/{{ block.video-id }}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
         allowfullscreen
         allowtransparency
         allow="autoplay"
       ></iframe>
   
-      {% elsif block.video.video-type == "vimeo" %}
+      {% elsif block.video-type == "vimeo" %}
   
       <div class="plyr__video-embed relative" id="player">
         <iframe
-          src="https://player.vimeo.com/video/{{ page.video.vimeo-id }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+          src="https://player.vimeo.com/video/{{ block.video-id }}?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
           allowfullscreen
           allowtransparency
           allow="autoplay"
