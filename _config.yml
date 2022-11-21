@@ -25,7 +25,10 @@ _array_structures:
       icon: article
       value:
         _id: video
-        
+        video-type: youtube
+        video-id: Jrpw-T-w_hA
+
+
             
 
 
