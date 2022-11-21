@@ -17,6 +17,10 @@ _array_structures:
           - image: https://picsum.photos/100/300
             column-width: 1
             aspect-ratio: landscape
+    - label: Banner
+      icon: article
+      value: 
+        _id: cta
             
 
 
