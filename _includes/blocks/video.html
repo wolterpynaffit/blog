@@ -1,6 +1,6 @@
 <section class="p-20">
 
-    {% if page.video.video-type == "youtube" %}
+    {% if block.video.video-type == "youtube" %}
   
     <div class="plyr__video-embed relative" id="player">
       <iframe
@@ -10,7 +10,7 @@
         allow="autoplay"
       ></iframe>
   
-      {% elsif page.video.video-type == "vimeo" %}
+      {% elsif block.video.video-type == "vimeo" %}
   
       <div class="plyr__video-embed relative" id="player">
         <iframe
