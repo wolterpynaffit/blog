@@ -27,6 +27,11 @@ _array_structures:
         _id: video
         video-type: youtube
         video-id: Jrpw-T-w_hA
+    - label: text
+      icon: article
+      value: time
+
+    
 
 
             
@@ -44,3 +49,4 @@ _select_data:
   section-styles:
     - p-5: Padded Sm
   inner-styles: Padded Md
+
