@@ -1,11 +1,15 @@
 ---
 layout: default
 title: Homepage
-seo: 
+seo:
  title:
  description:
  keywords:
 page_blocks:
+ -
+  _id: featured-posts
+  title: Featured Posts
+  author: author
 ---
 <h1 class="text-4xl font-bold text-slate-900">Welcome to your homepage!</h1>
 
@@ -20,11 +24,11 @@ page_blocks:
 <section class="grid grid-cols-3 ">
     {% for dave in site.posts %}
    
-    <div class="border border-black p-2" > 
+    <div class="border border-black p-2"> 
         <a href="{{dave.url}}"> 
-            <img src="{{ dave.img }}"/>
+            <img src="{{ dave.img }}" />
         </a>
-        <h2 > {{ dave.category }}</h2>
+        <h2> {{ dave.category }}</h2>
         <a href="{{dave.url}}"> 
             <h2> {{ dave.title }} </h2>
         </a> 
