@@ -1,0 +1,42 @@
+<section>
+    <div class="p-5 text-center text-4xl text-slate-700 border">
+        <h3>Featured Posts</h3>
+    </div>
+    <div>
+        <span class="author"> by {{posts.author}} </span>
+        <span> </span>
+
+    
+        <div class="grid grid-cols-4 p-20 gap-8">
+            {% for post in site.posts %}
+          
+                <a href="{{post.url}}">
+                  <div class="bg-image aspect-square " style="background-image:url({{post.img}})"> 
+                  </div>
+                  <div>
+                    <h3 class="capitalize text-xl py-0.5 pt-2 flex justify-left "> {{post.category}} </h3>
+                  </div>
+                  <div>
+                    <span class="capitalize text-lg pb-2 flex justify-left">{{post.title}}</span>
+                  </div>
+                  <div>
+                    
+                      {{post.description}}
+                    
+                  </div>
+
+                   <div>
+                    <span class=""> {{post.date | date: "%m.%d.%Y" }} 
+                    </span>
+                   </div>
+                 <p class="underline underline-offset-7">read more</p>
+                </a>
+           
+                
+            {% endfor %}
+          </div>	
+        
+        
+    </div>
+
+</section>

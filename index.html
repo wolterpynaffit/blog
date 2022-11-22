@@ -5,10 +5,17 @@ seo:
  title:
  description:
  keywords:
+page_blocks:
 ---
 <h1 class="text-4xl font-bold text-slate-900">Welcome to your homepage!</h1>
 
 {{site.posts[0].title}}
+
+	
+{% for block in page.page_blocks %}
+    {% include /blocks/{{block._id}}.html %}
+{% endfor %}
+
 
 <section class="grid grid-cols-3 ">
     {% for dave in site.posts %}
