@@ -33,7 +33,7 @@ _array_structures:
 
 
 _select_data:
-  type: 
+  video-types: 
     - vimeo
     - youtube
 
