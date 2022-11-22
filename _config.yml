@@ -30,7 +30,7 @@ _array_structures:
     - label: text
       icon: article
       value: 
-        _id: time
+        _id: text
 
     
 
