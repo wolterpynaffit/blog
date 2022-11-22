@@ -31,6 +31,8 @@ _array_structures:
       icon: article
       value: 
         _id: text
+        text: text field 
+
 
     
 
