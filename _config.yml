@@ -29,7 +29,8 @@ _array_structures:
         video-id: Jrpw-T-w_hA
     - label: text
       icon: article
-      value: time
+      value: 
+        _id: time
 
     
 
