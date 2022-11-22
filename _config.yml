@@ -33,6 +33,12 @@ _array_structures:
         _id: text
         title: Text Field
         text: text field
+    - label: posts
+      icon: article
+      value: 
+        _id: featured-posts
+        title: Featured Posts
+        author: author
         
 
 
