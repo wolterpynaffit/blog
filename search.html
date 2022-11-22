@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section class="p-6">
+
+<!-- HTML elements for search -->
+<input type="text" id="search-input" placeholder="Search blog posts.." class="p-6 text-orange-400 bg-slate-100">
+<ul id="results-container"></ul>
+
+</section>
+
+
+
+
+<!-- Javascript Functions for Search  -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
+<script>
+  var sjs = SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<div class="m-4 p-20 bg-green-100 block "><li><a href="{{ site.url }}{url}">{title}</a></li></div>',
+  noResultsText: 'Boohoo no results',
+  limit: 15,
+  fuzzy: true
+})
+
+</script>
+
+<!-- End Javascript for Search -->
