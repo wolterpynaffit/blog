@@ -31,8 +31,9 @@ _array_structures:
       icon: article
       value: 
         _id: text
+        title: Text Field
         text: text field
-        bobThing: 
+        
 
 
     
