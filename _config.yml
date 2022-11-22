@@ -33,6 +33,10 @@ _array_structures:
 
 
 _select_data:
+  type: 
+    - vimeo
+    - youtube
+
   aspect-ratios:
     - landscape
     - square

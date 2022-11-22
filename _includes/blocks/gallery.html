@@ -1,8 +1,8 @@
-<section class="p-2">
-    <div class="gallery grid grid-cols-{{block.gallery-column-count}} gap-5 ">
+<section class="p-4 ">
+    <div class="gallery grid grid-cols-{{block.gallery-column-count}} gap-5">
       {% for item in block.gallery %}
-        <div class="col-span-{{item.column-width}}">
-          <div class="aspect-{{item.aspect-ratio}} bg-cover bg-center" style="background-image:url('{{item.image}}')" ></div>
+        <div class="col-span-{{item.column-width}} ">
+          <div class="aspect-{{item.aspect-ratio}} bg-cover bg-center " style="background-image:url('{{item.image}}')" ></div>
         </div>
   
     {% endfor %}
