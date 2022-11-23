@@ -2,7 +2,7 @@
 layout: default
 ---
 
-
+<!----------------------------------- social links-------------------- -->
 	<nav class="bg-black p-4 text-xl sticky inset-y-1/4 flex flex-col inline-flex ">
 		<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
 			<i class="text-white pb-3.5 fab fa-twitter"></i>
@@ -16,17 +16,19 @@ layout: default
 	</nav>
 	
 
-	
+<!----------------------------------- social links-------------------- -->	
 {% for block in page.page_blocks %}
     {% include /blocks/{{block._id}}.html %}
 {% endfor %}
 
+<!---------------------------------text block  -------------------->
 
 
+<!----------------------------------- Related Posts-------------------- -->
 <section>
-	<h4> Related Posts </h4>
+	
 	<div>
-
+		
 		{% assign pageCategory = page.categories[0] %}
 
 {{pageCategory}}

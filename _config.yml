@@ -1,3 +1,16 @@
+
+sass:
+  dir: _sass
+  style: compressed  
+
+css_dir: "/style"
+
+plugins:
+  - jekyll-postcss-v2
+
+postcss:
+  cache: false
+  
 page_block:
 _array_structures:
   page_blocks:
