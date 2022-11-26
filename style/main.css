@@ -1,6 +1,3 @@
----
-# Main CSS file with Tailwind
----
 
 @tailwind base;
 @tailwind components;
@@ -8,4 +5,12 @@
  
 .button {
     @apply inline-block p-6 bg-blue-600 text-white hover:bg-blue-800 transition;
+}
+
+.aspect-portrait {
+    padding-bottom: 110%;
+}
+
+.aspect-landscape {
+    padding-bottom: 60%;
 }
