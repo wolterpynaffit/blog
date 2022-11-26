@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Homepage
-seo: 
+seo:
  title:
  description:
  keywords:
@@ -10,7 +10,7 @@ page_blocks:
 <section>
     <div>
         <h2> Welcome to your new favourite blog </h2>
-        <p class=> Lorem, ipsum dolor sit amet consectetur. </p>
+        <p> Lorem, ipsum dolor sit amet consectetur. </p>
     </div>
 
 </section>
@@ -25,15 +25,15 @@ h
 <section class="grid grid-cols-3 ">
     {% for dave in site.posts %}
    
-    <div class="border border-black p-2" > 
+    <div class="border border-black p-2"> 
         <a href="{{dave.url}}"> 
-            <img src="{{ dave.img }}"/>
+            <img src="{{ dave.img }}" />
         </a>
-        <h2 > {{ dave.category }}</h2>
+        <h2> {{ dave.category }}</h2>
         <a href="{{dave.url}}"> 
             <h2> {{ dave.title }} </h2>
         </a> 
         <h2> {{ dave.author }}</h2>
      </div>
     {% endfor %}
-</section> -->
+ -->
